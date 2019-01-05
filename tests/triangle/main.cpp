@@ -138,8 +138,6 @@ public:
 	{
 		r::CommandListPtr commandListToRender = nullptr;
 
-		m_triangleModel->GetTransformation().Roll(0.01);
-
 		if (GetCurrentFrame() == 0)
 		{
 			m_loadCommandList->GetTail()->SetNext(m_renderCommandList->GetHead());
